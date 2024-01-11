@@ -6,7 +6,6 @@ def get_valid_integer():
         else:
             print("Invalid integer. Please try again.")
 
-
 def calculate_factors(num):
     factors = []
     for i in range(1, num + 1):
@@ -36,7 +35,7 @@ def main():
             factors = calculate_factors(num)
             factor_count = len(factors)
             print(f"{num} is NOT a prime number.")
-            print(f"It has {factor_count} factors.")
+            print(f"It has {factor_count} factors: {factors}")
         choice = input("Try again? (y/n): ").strip().lower()
         if choice != 'y':
             print("Bye!")
